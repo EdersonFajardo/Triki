@@ -1,0 +1,32 @@
+/* Agrega tus estilos CSS aquí */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #000;
+    cursor: pointer;
+    display: flex; /* Para centrar contenido verticalmente */
+    align-items: center; /* Para centrar contenido verticalmente */
+    justify-content: center; /* Para centrar contenido horizontalmente */
+}
+
+/* Estilos para resaltar el turno del jugador actual */
+.playerX {
+    background-color: #FF5733;
+    color: #fff; /* Color del texto para 'X' */
+}
+
+.playerO {
+    background-color: #33FF57;
+    color: #fff; /* Color del texto para 'O' */
+}
+
